@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: config.xml 14 2009-11-02 18:35:20Z chdemko $ -->
+<config>
+		<fieldset
+			name="details"
+			label="COM_JEREVERSE_AUCTION_PRODUCT_SETTINGS_LABEL"
+			description="COM_JEREVERSE_AUCTION_PRODUCT_SETTINGS_DESC"
+		>
+
+		<field name="enable_header_refresh"
+			type="radio"
+			label="COM_JEREVERSE_AUCTION_ENABLE_HEADER_REFRESH_LABEL"
+			description="COM_JEREVERSE_AUCTION_ENABLE_HEADER_REFRESH_DESC"
+			default="0"
+			class="required"
+		>
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="header_refresh"
+			type="text"
+			label="COM_JEREVERSE_AUCTION_HEADER_REFRESH_LABEL"
+			description="COM_JEREVERSE_AUCTION_HEADER_REFRESH_DESC"
+			class="inputbox validate-numeric"
+			default="60"
+		/>
+
+		<field  name="currency" type="list" default="1"
+				label="COM_JEREVERSE_AUCTION_CURRENCY_LABEL"
+				description="COM_JEREVERSE_AUCTION_CURRENCY_DESC">
+			   <option value="&#36;">NZD</option>
+               <option value="&#8364;">EUR</option>
+               <option value="&#36;">USD</option>
+               <option value="&#8377;">INR</option>
+               <option value="A&#36;">AUD</option>
+               <option value="&#163;">GBP</option>
+
+         </field>
+		 <field name="won_expire"
+			type="text"
+			label="COM_JEREVERSE_AUCTION_FIELD_EXPIRE_LABEL"
+			description="COM_JEREVERSE_AUCTION_EXPIRE_DESC"
+			class="required"
+			default="10"
+		 />
+
+		 <field name="commission"
+			type="text"
+			label="COM_JEREVERSE_AUCTION_COMMISSION_LABEL"
+			description="COM_JEREVERSE_AUCTION_COMMISSION_DESC"
+			class="inputbox validate-numeric"
+		/>
+
+		<field name="show_footertext"
+			type="radio"
+			label="COM_JEREVERSE_AUCTION_FIELD_SHOW_FOOTERTEXT_LABEL"
+			description="COM_JEREVERSE_AUCTION_FIELD_SHOW_FOOTERTEXT_DESC"
+			default="1"
+			>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+		</field>
+	</fieldset>
+
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+	>
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_jereverseauction"
+			section="component"
+		/>
+	</fieldset>
+
+</config>
+

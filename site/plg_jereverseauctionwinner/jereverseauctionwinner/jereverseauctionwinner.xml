@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>plg_jereverseauction_winner</name>
+	<author>JExtension</author>
+	<creationDate>Sep 2010</creationDate>
+	<copyright>Copyright (C) 2010 JExtension. All rights reserved.</copyright>
+	<license>GNU General Public License</license>
+	<authorEmail>contact@jextn.com</authorEmail>
+	<authorUrl>www.jextn.com</authorUrl>
+	<version>1.0.0</version>
+	<description>JE Reverse Auction Winner</description>
+	<files>
+			<filename plugin="jereverseauctionwinner">jereverseauctionwinner.php</filename>
+			<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_jereverseauctionwinner.ini</language>
+		<language tag="en-GB">en-GB.plg_system_jereverseauctionwinner.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+		</fields>
+	</config>
+</extension>

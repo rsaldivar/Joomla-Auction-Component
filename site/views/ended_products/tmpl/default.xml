@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JEREVERSE_AUCTION_VIEW_ENDED_PRODUCT" option="COM_JEREVERSE_AUCTION_VIEW_ENDED_PRODUCT">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_VIEW_ENDED_PRODUCT"
+		/>
+		<message>
+			<![CDATA[COM_JEREVERSE_AUCTION_VIEW_ENDED_PRODUCT]]>
+		</message>
+	</layout>
+</metadata>

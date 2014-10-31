@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: commission.xml 74 2010-12-01 22:04:52Z chdemko $ -->
+<form>
+	<fieldset name="details">
+		<field
+			name="user_id"
+			type="text"
+			label="COM_JEREVERSE_AUCTION_USER_ID"
+			description="COM_JEREVERSE_AUCTION_USER_ID"
+			class="inputbox validate-numeric"
+			size="40"
+			required="true"/>
+
+		<field
+			name="prod_id"
+			type="text"
+			label="COM_JEREVERSE_AUCTION_PRODUCT_ID"
+			description="COM_JEREVERSE_AUCTION_PRODUCT_ID"
+			class="inputbox validate-numeric"
+			size="40"
+			required="true"/>
+
+		<field
+			name="published"
+			type="list"
+			class="inputbox"
+			default="1"
+			size="1"
+			label="JGLOBAL_STATE"
+			description="JFIELD_PUBLISHED_DESC">
+			<option
+				value="1">
+				JPUBLISHED</option>
+			<option
+				value="0">
+				JUNPUBLISHED</option>
+			<option
+				value="2">
+				JARCHIVED</option>
+			<option
+				value="-2">
+				JTRASHED</option>
+		</field>
+
+		<field
+			name="status"
+			type="list"
+			class="inputbox"
+			default="1"
+			size="1"
+			label="COM_JEREVERSE_AUCTION_PAYMENT_STATUS"
+			description="COM_JEREVERSE_AUCTION_PAYMENT_STATUS">
+			<option
+				value="1">
+				COM_JEREVERSE_AUCTION_COMPLETED</option>
+			<option
+				value="0">
+				COM_JEREVERSE_AUCTION_PENDING</option>
+			</field>
+
+		<field
+			name="id"
+			type="hidden"
+			label="COM_JEREVERSE_AUCTION_BUY_BIDS_BIDS"
+			description="COM_JEREVERSE_AUCTION_BUY_BIDS_BIDS"
+			class="inputbox"
+			size="40"
+			/>
+
+	</fieldset>
+
+	<fieldset name="payment_details">
+		<field
+			name="amount"
+			type="text"
+			label="COM_JEREVERSE_AUCTION_AMOUNT"
+			description="COM_JEREVERSE_AUCTION_AMOUNT"
+			class="inputbox validate-numeric"
+			size="40"
+			required="true"/>
+
+		<field
+			name="trans_id"
+			type="text"
+			label="COM_JEREVERSE_AUCTION_TRANSACTION_ID"
+			description="COM_JEREVERSE_AUCTION_TRANSACTION_ID"
+			class="inputbox"
+			size="40"
+		/>
+
+		<field
+			name="payment_type"
+			type="text"
+			label="COM_JEREVERSE_AUCTION_PAYMENT_TYPE"
+			description="COM_JEREVERSE_AUCTION_PAYMENT_TYPE"
+			default="Paypal"
+			readonly="true"
+			class="inputbox"
+			size="40"
+			required="true"/>
+
+		<field name="paid_date" type="calendar"
+			label="COM_JEREVERSE_AUCTION_USER_BIDS_REG_DATE" description="COM_JEREVERSE_AUCTION_USER_BIDS_REG_DATE"
+			class="inputbox" size="22" format="%Y-%m-%d %H:%I:%S"
+			required="true"
+			filter="user_utc" />
+
+	</fieldset>
+
+</form>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- $Id: mailtemplate.xml 20085 2011-01-05 02:42:55Z eddieajau $ -->
+<form>
+	<fieldset>
+		<field name="id"
+			type="text"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC"
+			size="10"
+			default="0"
+			readonly="true"
+			class="readonly"
+		/>
+
+		<field name="subject" type="text" label="COM_JEREVERSE_AUCTION_FIELD_SUBJECT_LABEL"
+			description="COM_JEREVERSE_AUCTION_FIELD_SUBJECT_DESC" class="inputbox" size="125"
+			required="true" />
+
+		<field name="mailbody" type="editor"
+			label="COM_JEREVERSE_AUCTION_FIELD_MAILBODY_LABEL"
+			description="COM_JEREVERSE_AUCTION_FIELD_MAILBODY_DESC"
+			class="inputbox"
+			filter="safehtml"
+			buttons="true"
+			hide="readmore,pagebreak"
+			 />
+
+		 <field id="published"
+			name="published"
+			type="list"
+			label="COM_JEREVERSE_AUCTION_FIELD_PUBLISHED_LABEL"
+			description="COM_JEREVERSE_AUCTION_FIELD_PUBLISHED_DESC"
+			class="inputbox"
+			size="1"
+			default="1"
+		>
+			<option value="1">
+				JPUBLISHED</option>
+			<option value="0">
+				JUNPUBLISHED</option>
+		</field>
+	</fieldset>
+</form>

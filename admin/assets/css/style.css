@@ -1,0 +1,44 @@
+/**
+ * JE Reverse Auction package
+ * @author JExtension <contact@jextn.com>
+ * @link http://www.jextn.com
+ * @copyright (C) 2012 - 2013 JExtension
+ * @license GNU/GPL, see LICENSE.php for full license.
+**/
+
+div.icon-48-jegroupbuy {
+	background: url('../images/icons/auction_48.png');
+}
+
+.icon-48-products{
+	background: url('../images/icons/products_48.png');
+}
+
+form , table td{
+	/*font-family: "Lucida Sans Unicode" !important;*/
+	font-size:12px;
+}
+
+div.icon-48-mailtemplate {
+	background: url(../images/icons/emailtemplate_48.png);
+}
+
+.icon-48-wins{
+	background: url(../images/icons/wins.png);
+}
+
+.icon-32-masspay{
+	background: url(../images/icons/icon-medium-mass-pay.png);
+}
+
+.icon-48-commission{
+	background: url(../images/icons/periods.png);
+}
+
+.icon-48-user_bids{
+	background: url(../images/icons/usersubscriptions.png);
+}
+
+.icon-48-bids{
+	background: url(../images/icons/bids_48.png);
+}

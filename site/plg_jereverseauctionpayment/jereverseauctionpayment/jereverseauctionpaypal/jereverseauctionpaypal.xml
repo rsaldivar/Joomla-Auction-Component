@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="jereverseauctionpayment" method="upgrade">
+	<name>plg_jereverseauctionpaypal</name>
+	<license>GNU General Public License v2, see LICENSE.php</license>
+	<author>JExtension</author>
+	<copyright>[2012] JExtn</copyright>
+	<creationDate>March 26, 2012</creationDate>
+	<authorEmail>contact@jextn.com</authorEmail>
+	<authorUrl>http://www.jextn.com</authorUrl>
+	<version>1.0.0 Stable</version>
+	<description>jereverseauction Paypal payment</description>
+	<files>
+		<filename plugin="jereverseauctionpaypal">jereverseauctionpaypal.php</filename>
+		<folder>jereverseauctionpaypal</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_jereverseauctionpaypal.ini</language>
+		<language tag="en-GB">en-GB.plg_system_jereverseauctionpaypal.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="email_id" type="text" size="50" default="" label="Business email id" description="Paypal Business email id"/>
+		        <field name="test" type="radio" default="1" label="Test Mode" description="Select No for Production">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="currency_code" type="text" size="50" default="NZD" label="Currency code" description="Currency Code Eg.=NZD"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

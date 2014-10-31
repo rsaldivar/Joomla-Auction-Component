@@ -1,0 +1,140 @@
+/**
+ * JE Reverse Auction package
+ * @author JExtension <contact@jextn.com>
+ * @link http://www.jextn.com
+ * @copyright (C) 2012 - 2013 JExtension
+ * @license GNU/GPL, see LICENSE.php for full license.
+**/
+
+.comment_heading {
+	color: #014353;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	padding: 19px 0 14px 10px;
+	float: left;
+}
+
+/* Loader Css ,the basics, and works for FF*/
+#loading-effect{
+	margin:0px 0px 0px 0px;
+	position:fixed;
+	height: 100%;
+	z-index:9999;
+	top : 0px ;
+	left : 0px;
+	width:100%;
+	clear:none;
+	background:url(../images/transbg.png);
+}
+
+div#pbar{
+	text-align : center; margin-top : 350px;color:white;
+}
+/* --------------------------------------- Pagination start -------------------------------------------------------- */
+div#donation-pagination {
+	padding: 20px;
+}
+
+div#donation-pagination div.list-footer {
+	text-align: center;
+}
+
+div#donation-pagination div.limit {
+	display: none;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+div#donation-pagination div.counter {
+	text-align: center;
+	margin-top: 10px;
+}
+
+div.back11 {
+	background-color: #EEEEEE;
+	padding: 15px 10px;
+	padding-bottom: 0px;
+}
+
+div.users1 {
+	background-color: #EEEEEE;
+}
+
+div#donation-pagination ul li {
+	display: inline;
+	list-style-type: none;
+}
+
+.table-styles {
+	border-collapse: separate !important;
+	border: 1px #D2DFE8;
+}
+
+.table-styles tr td{
+	border: 1px solid #DDDDDD !important;
+}
+
+.events-heading {
+	margin: 10px;
+	color: #6692B7;
+	font-size: 20px;
+	font-family: Tahoma !important;
+}
+
+.events-inner-image {
+	float: left;
+	margin: 10px;
+}
+
+.events-description {
+	float: left;
+	text-align: justify;
+	margin-top: 10px;
+	width: 277px;
+	height:100px;
+}
+
+.events-readmore {
+	margin: 5px;
+	color: #1A5C90;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+   float:right;
+}
+
+.events-readmore a {
+	text-decoration: none;
+}
+.event-inner-image{
+	margin:5px;
+    text-align:center;
+}
+.event-name a{
+	text-decoration:none;
+	}
+
+.event-name{
+	width:150px;
+	margin:0 auto;
+	}
+.event-description{
+    width:150px;
+    margin:0 auto;
+	}
+/* --------------------------------------- Pagination End -------------------------------------------------------- */
+.order-table tr,.order-table td {
+	border: none !important;
+	font-family: Verdana;
+}
+
+.order-table {
+	border-collapse: separate !important;
+}
+
+td.left-td {
+width:1176px;
+}
+
+td.middle-td {
+width:0px;
+}

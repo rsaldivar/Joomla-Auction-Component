@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>JE Reverse Auction</name>
+	<license>GNU General Public License v2, see LICENSE.php</license>
+	<author>JExtension</author>
+	<copyright>[2012] JExtn</copyright>
+	<creationDate>July 27,2012</creationDate>
+	<authorEmail>contact@jextn.com</authorEmail>
+	<authorUrl>http://www.jextn.com</authorUrl>
+	<version>3.0.0</version>
+	<description>JE Reverse Auction is a best component For Better Reverse Auction</description>
+
+	<administration>
+		<menu  link="option=com_jereverseauction" img="components/com_jereverseauction/assets/images/icons/small_icon_faq.png">COM_JEREVERSE_AUCTION</menu>
+		<submenu>
+			<menu link="option=com_categories&amp;extension=com_jereverseauction" view="categories" img="components/com_jereverseauction/assets/images/icons/small_icon_categories.png">COM_JEREVERSE_AUCTION_CATEGORIES</menu>
+			<menu link="option=com_jereverseauction&amp;view=products" view="products" img="components/com_jereverseauction/assets/images/icons/small_icon_products.png">COM_JEREVERSE_AUCTION_PRODUCTS</menu>
+			<menu link="option=com_jereverseauction&amp;view=userwins" view="userwins" img="components/com_jereverseauction/assets/images/icons/small_icon_wins.png">COM_JEREVERSE_AUCTION_USER_WINS</menu>
+			<menu link="option=com_jereverseauction&amp;view=commissions" view="commission" img="components/com_jereverseauction/assets/images/icons/small_icon_commission.png">COM_JEREVERSE_AUCTION_COMMISSION</menu>
+			<menu link="option=com_jereverseauction&amp;view=mailtemplates" view="mailtemplates" img="components/com_jereverseauction/assets/images/icons/small_icon_emailtemplate.png">COM_JEREVERSE_AUCTION_MAIL_TEMPLATES</menu>
+		</submenu>
+
+		<languages folder="admin">
+			<language tag="en-GB">en-GB.com_jereverseauction.ini</language>
+			<language tag="en-GB">en-GB.com_jereverseauction.sys.ini</language>
+			<language tag="en-GB">en-GB.plg_system_jereverseauctionAuthorizedotnet.ini</language>
+			<language tag="en-GB">en-GB.plg_system_jereverseauctionAuthorizedotnet.sys.ini</language>
+			<language tag="en-GB">en-GB.plg_system_jereverseauctionpaypal.ini</language>
+			<language tag="en-GB">en-GB.plg_system_jereverseauctionpaypal.sys.ini</language>
+		</languages>
+		<files folder="admin">
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>copyright</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+
+			<filename>access.xml</filename>
+			<filename>jereverseauction.php</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>install.mysql.sql</filename>
+			<filename>uninstall.mysql.sql</filename>
+			<filename>index.html</filename>
+		</files>
+	</administration>
+
+	<languages folder="site">
+		<language tag="en-GB">en-GB.com_jereverseauction.ini</language>
+	</languages>
+
+	<files folder="site">
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>copyright</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>plg_jereverseauctionpayment</folder>
+			<folder>plg_jereverseauctionwinner</folder>
+
+			<filename>jereverseauction.php</filename>
+			<filename>controller.php</filename>
+			<filename>router.php</filename>
+			<filename>index.html</filename>
+
+	</files>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.mysql.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+
+	<installfile>install.jereverseauction.php</installfile>
+	<uninstallfile>uninstall.jereverseauction.php</uninstallfile>
+</extension>

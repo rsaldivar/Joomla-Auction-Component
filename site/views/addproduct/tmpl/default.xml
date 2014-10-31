@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JEREVERSE_AUCTION_ADD_PRODUCT" option="COM_JEREVERSE_AUCTION_ADD_PRODUCT">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_ADD_PRODUCT"
+		/>
+		<message>
+			<![CDATA[COM_JEREVERSE_AUCTION_ADD_PRODUCT]]>
+		</message>
+	</layout>
+</metadata>

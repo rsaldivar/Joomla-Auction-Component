@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: product.xml 74 2010-12-01 22:04:52Z chdemko $ -->
+<form>
+	<fieldset name="details">
+		<field
+			name="prod_name"
+			type="text"
+			label="JGLOBAL_TITLE"
+			description="COM_JEREVERSE_AUCTION_PRODUCT_TITLE_DESC"
+			class="inputbox"
+			size="40"
+			required="true"/>
+
+		<field
+			name="alias"
+			type="text"
+			label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC"
+			class="inputbox"
+			size="40"/>
+
+		<field name="catid"
+			type="category"
+			extension="com_jereverseauction"
+			label="JCATEGORY"
+			description="JFIELD_CATEGORY_DESC"
+			class="inputbox"
+			required="true"
+		/>
+		<field
+			name="published"
+			type="list"
+			class="inputbox"
+			default="1"
+			size="1"
+			label="JGLOBAL_STATE"
+			description="JFIELD_PUBLISHED_DESC">
+			<option
+				value="1">
+				JPUBLISHED</option>
+			<option
+				value="0">
+				JUNPUBLISHED</option>
+			<option
+				value="2">
+				JARCHIVED</option>
+			<option
+				value="-2">
+				JTRASHED</option>
+		</field>
+
+		<field
+			name="access"
+			type="accesslevel"
+			label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC"
+			class="inputbox"/>
+
+		<fieldset name="image">
+			<field name="prod_image"
+			   type="file"
+			   label="COM_JEREVERSE_AUCTION_PRODUCT_FIELD_IMAGE_LABEL"
+			   description="COM_JEREVERSE_AUCTION_PRODUCT_FIELD_IMAGE_DESC"
+			   class="inputbox"
+			   size="30"
+			/>
+
+			<field name="prod_detail_image"
+			   type="mfile"
+			   label="COM_JEREVERSE_AUCTION_PRODUCT_DETAIL_FIELD_IMAGE_LABEL"
+			   description="COM_JEREVERSE_AUCTION_PRODUCT_DETAIL_FIELD_IMAGE_DESC"
+			   class="inputbox"
+			   size="30"
+			/>
+		</fieldset>
+
+		<field
+			name="description"
+			type="editor"
+			label="COM_JEREVERSE_AUCTION_PRODUCT_DESC"
+			description="COM_JEREVERSE_AUCTION_PRODUCT_DESC"
+			size="40"
+			class=""
+			validate=""
+			required=""
+			default=""
+			filter="safehtml"
+		/>
+
+		<field
+			name="max_bid_amount"
+			type="text"
+			label="COM_JEREVERSE_AUCTION_MAX_BID_AMOUNT"
+			description="COM_JEREVERSE_AUCTION_MAX_BID_AMOUNT_DESC"
+			class="inputbox validate-numeric"
+			required="true"
+			size="20"/>
+
+		<field
+			name="min_bid_amount"
+			type="text"
+			label="COM_JEREVERSE_AUCTION_MIN_BID_AMOUNT"
+			description="COM_JEREVERSE_AUCTION_MIN_BID_AMOUNT_DESC"
+			class="inputbox validate-numeric"
+			required="true"
+			size="20"/>
+
+		<field
+			name="coupon_code"
+			type="text"
+			label="COM_JEREVERSE_AUCTION_PRODUCT_COUPON_CODE"
+			description="COM_JEREVERSE_AUCTION_PRODUCT_COUPON_CODE_DESC"
+			class="inputbox"
+			size="20"/>
+
+		<field
+			name="coupon_validity"
+			type="text"
+			label="COM_JEREVERSE_AUCTION_COUPON_VALIDITY"
+			description="COM_JEREVERSE_AUCTION_COUPON_VALIDITY_DESC"
+			class="inputbox validate-numeric"
+			size="20"/>
+
+		<field name="end_time" type="calendar"
+			label="COM_JEREVERSE_AUCTION_PRODUCT_DEAL_TO_DATE"
+			description="COM_JEREVERSE_AUCTION_PRODUCT_DEAL_TO_DATE_DESC"
+			class="inputbox" size="22" format="%Y-%m-%d %H:%I:%S"
+			required="true"
+			filter="user_utc" />
+
+		<field name="start_time" type="calendar"
+			label="COM_JEREVERSE_AUCTION_START_TIME"
+			description="COM_JEREVERSE_AUCTION_START_TIME_DESC"
+			class="inputbox" size="22" format="%Y-%m-%d %H:%I:%S"
+			required="true"
+			filter="user_utc" />
+
+		<field
+			name="id"
+			type="text"
+			default="0"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC"
+			class="readonly"
+			readonly="true"/>
+
+		<field name="ordering"
+			type="ordering"
+			class="inputbox"
+			label="JFIELD_ORDERING_LABEL"
+			description="JFIELD_ORDERING_DESC"
+		/>
+
+	</fieldset>
+</form>
+
